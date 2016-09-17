@@ -17,7 +17,7 @@ fs.readdirSync(__dirname + '/../models').forEach(function(filename)  {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' })
+  res.render('', { title: 'Express' })
 })
 
 router.get('/users', function(req, res)  {
