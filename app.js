@@ -12,7 +12,7 @@ var users = require('./routes/users');
 
 var app = express();
 
-app.use('/static', express.static(__dirname + '/node_modules/'))
+app.use('/public', express.static(__dirname + '/node_modules/'))
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
