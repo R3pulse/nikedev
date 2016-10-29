@@ -7,13 +7,15 @@
 
     <title>Nikedev the homepage</title>
   </head>
-  <body>
+  <body ng-app="myApp">
     <h1>Whazzaaa</h1>
-      <div ng-app="app">
+      <div>
+        <helou></helou>
         <footer ng-include=" 'templates/footer.html' "></footer>
-
         </div>
       </div>
+      <script src="public/angular/angular.js"></script>
+      <script src="vendor/scripts/app.js"></script>
+      <script src="vendor/scripts/directives/hello.js"></script>
   </body>
 </html>
-<script src="public/angular/angular.js"></script>

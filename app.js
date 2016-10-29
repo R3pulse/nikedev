@@ -11,12 +11,14 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
+console.log("Listening to port 3000!")
 
 app.use('/public', express.static(__dirname + '/node_modules/'))
+app.use('/vendor', express.static(__dirname + '/vendor'))
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.set('view engine', 'html');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -24,7 +26,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'vendor')));
 
 app.use('/', routes);
 app.use('/users', users);
