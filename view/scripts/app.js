@@ -8,7 +8,7 @@ angular
       .state('home', {
         url: '/',
         templateUrl: 'templates/home.html',
-        controller: 'homeCtrl'
+        controller: 'homeCtrl',
       })
       .state('about', {
         url: '/about',
@@ -19,5 +19,10 @@ angular
         url: '/contact',
         templateUrl: 'templates/contact.html',
         controller: 'contactCtrl'
+      })
+      .state('todo', {
+        url: '/todo',
+        templateUrl: 'templates/todo.html',
+        controller: 'todoCtrl'
       })
   }])

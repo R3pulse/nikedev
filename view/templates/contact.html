@@ -1,2 +1,30 @@
-<h1>{{title}}</h1>
-Contact
+<section id="about" class="bg-primary">
+  <div class="container">
+    <div class="row">
+      <div class="contact-form">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+          <h1 class="section-heading">{{title}}</h1>
+          <form id="contact-form">
+            <div class="row">
+              <input type="text" ng-model="first-name">
+            </div>
+            <div class="row">
+              <input type="text" ng-model="last-name">
+            </div>
+            <div class="row">
+              <input type="text" ng-model="email">
+            </div>
+            <div class="row">
+              <textarea rows="4" cols="50" form="contact-form" ng-model="message"></textarea>
+            </div>
+            <div class="row">
+              <button class="btn btn-default btn-xl" type="button" action="#">Submit</button>
+            </div>
+          </form>
+          <hr class="light"/>
+          <p class="text-faded">If you have any questions or want additional information feel free to contact me.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

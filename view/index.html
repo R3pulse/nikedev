@@ -2,25 +2,39 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="public/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="public/css/creative.css">
+    <link rel="stylesheet" type="text/css" href="public/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="public/css/font-awesome/css/font-awesome.min.css">
+
     <title>Nikedev the homepage</title>
+    <base href="/">
   </head>
   <body ng-app="myApp">
     <header ng-include="'templates/nav.html'"></header>
     <div ui-view>
-
+      
     </div>
       <div>
         <helou></helou>
         <footer ng-include=" 'templates/footer.html' "></footer>
         </div>
       </div>
-      <script src="public/angular/angular.js"></script>
-      <script src="public/angular-ui-router/release/angular-ui-router.js"></script>
+      <script src="vendor/angular/angular.js"></script>
+      <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
       <script src="view/scripts/app.js"></script>
       <script src="view/scripts/controllers/homeCtrl.js"></script>
       <script src="view/scripts/controllers/aboutCtrl.js"></script>
       <script src="view/scripts/controllers/contactCtrl.js"></script>
+      <script src="view/scripts/controllers/todoCtrl.js"></script>
       <script src="view/scripts/directives/hello.js"></script>
+      <script src='/public/js/jquery.js'></script>
+      <script src='/public/js/bootstrap.min.js'></script>
+      <script src='/public/js/jquery.easing.min.js'></script>
+      <script src='/public/js/jquery.fittext.js'></script>
+      <script src='/public/js/wow.min.js'></script>
+      <script src='/public/js/creative.js'></script>
+      <script src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'></script>
+      <script src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js'></script>
   </body>
 </html>
